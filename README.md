@@ -2,10 +2,10 @@
 
 The files in this repository were used to configure the network depicted below.
 
-ELk_Stack_Project/Diagrams/Cloud_Project_Diagram.png
+https://github.com/ThePallas/ELk_Stack_Project/tree/main/Diagrams/Cloud_Project_Diagram.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select playbook files may be used to install only certain pieces of it, such as Filebeat.
-All .yml files are stored in the ELk_Stack_Project/Ansible/ directory on the repository.
+All .yml files are stored in the https://github.com/ThePallas/ELk_Stack_Project/tree/main/Ansible directory on the repository.
 
 -install-elk.yml sets up the ELK server
 -filebeat-config.yml is the configuration file for filebeat-playbook.yml.
@@ -85,7 +85,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-The screenshot is located in ELk_Stack_Project/Images/DockerPS.png on this repository.
+The screenshot is located in https://github.com/ThePallas/ELk_Stack_Project/tree/main/Images/DockerPS.png on this repository.
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -129,7 +129,7 @@ VMs are started in Azure.
 4.  Start the docker container with sudo docker start <docker container name>
 5.  Attach the docker container with sudo docker attach <docker container name>.  You will know the container is running because the prompt will change to the container prompt.
 6.  From the docker container that already has Ansible configured, update the ansibile host file to include the ip for the ELK server in an [elk] group.
-7.  create an elk install playbook.  See ELk_Stack_Project/Ansible/install-elk.yml file on this repository.
+7.  create an elk install playbook.  See https://github.com/ThePallas/ELk_Stack_Project/tree/main/Ansible/install-elk.yml file on this repository.
 8.  Run the elk install playbook.  ansible-playbook <elk install playbook name>
 9.  Once the container is running, use a browser to navigate to http://<ELK server external IP address>:5601/app/kibana , if the web page displays, the configuration is correct.
 10.  Add Filebeat and Metricbeat. 
