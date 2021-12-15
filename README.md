@@ -52,17 +52,21 @@ Only the Gateway machine can accept connections from the Internet. Access to thi
 - 15.181.177.143          
 
 Machines within the network can only be accessed by My workstation.
-- 15.181.177.143 *Note my workstation IP address is dynamic, therefore the inbound rule has to be periodically updated.  
+- 15.181.177.143 *Note my workstation IP address is dynamic via VPN, therefore the inbound rule has to be periodically updated.  
 
 A summary of the access policies in place can be found in the table below. Web-1, Web-2 & Web-3 are part of a backend pool and are accessible via the Load Balancer.
 
-| Name                | Publicly  Accessible | Allowed IP  Addresses   |
-|---------------------|----------------------|-------------------------|
-| JumpBoxProvisioner  | Yes                  | 15.181.177.143          |
-| RedELK              | Yes                  | 15.181.177.143          |
-| Web-1 via RedTeamLB | Yes                  | 10.0.0.4 15.181.177.143 |
-| Web-2 via RedTeamLB | Yes                  | 10.0.0.4 15.181.177.143 |
-| Web-3 via RedTeamLB | Yes                  | 10.0.0.4 15.181.177.143 |
+| Name               | Publicly  Accessible | Allowed IP  Addresses   |
+|--------------------|----------------------|-------------------------|
+| JumpBoxProvisioner | Yes                  | 15.181.177.143          |
+| RedELK             | Yes                  | 15.181.177.143 10.0.0.4 |
+| Web-1              | No                   | 10.0.0.4                |
+| Web-2              | No                   | 10.0.0.4                |
+| Web-3              | No                   | 10.0.0.4                |
+| RedTeamLB          | Yes                  | 15.181.177.143          |
+|                    |                      |                         |
+
+
 
 
 ### Elk Configuration
